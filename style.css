@@ -109,7 +109,7 @@ body {
   color: white;
 }
 
-.end {
+/* .end {
   position: absolute;
   margin-left: 500px;
   margin-top: 360px;
@@ -121,7 +121,7 @@ body {
   position: absolute;
   margin-left: 400px;
   margin-top: 580px;
-}
+} */
 
 .alarm {
   width: 210px;
