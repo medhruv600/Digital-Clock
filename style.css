@@ -9,7 +9,6 @@ body {
 .pop {
   width: 400px;
   height: 300px;
-
   background-color: #ffffff;
   margin-left: 200px;
   border-radius: 15px;
@@ -19,6 +18,7 @@ body {
   margin-left: 20px;
   margin-top: 15px;
 }
+
 .text1 {
   margin-left: 60px;
   margin-top: -30px;
@@ -32,6 +32,7 @@ body {
   width: 150px;
   border: 2px solid #ededed;
 }
+
 .drop2 {
   position: absolute;
   margin-left: 430px;
@@ -40,26 +41,32 @@ body {
   width: 150px;
   border: 2px solid #ededed;
 }
+
 .img2 {
   margin-left: 20px;
   margin-top: 15px;
 }
+
 .text2 {
   margin-left: 60px;
   margin-top: -30px;
 }
+
 .img3 {
   margin-left: 20px;
   margin-top: 15px;
 }
+
 .text3 {
   margin-left: 60px;
   margin-top: -30px;
 }
+
 .img4 {
   margin-left: 20px;
   margin-top: 15px;
 }
+
 .text4 {
   margin-left: 60px;
   margin-top: -30px;
@@ -99,29 +106,14 @@ body {
   font-size: 0;
   background-image: linear-gradient(113deg, #6e54ec, #cb52f8, #fc5eff);
 }
-.set:hover:after {
+
+.set:hover::after {
   content: attr(hover);
   font-size: 20px;
   line-height: 24px;
-  font-size: 20px;
-  background-image: linear-gradient(113deg, #6e54ec, #cb52f8);
-
   color: white;
+  background-image: linear-gradient(113deg, #6e54ec, #cb52f8);
 }
-
-/* .end {
-  position: absolute;
-  margin-left: 500px;
-  margin-top: 360px;
-}
-.arrow1 {
-  margin-left: 150px;
-}
-.lastend {
-  position: absolute;
-  margin-left: 400px;
-  margin-top: 580px;
-} */
 
 .alarm {
   width: 210px;
@@ -170,6 +162,7 @@ body {
   z-index: -2;
   opacity: 0.22;
 }
+
 .time1 {
   font-size: 25px;
   margin-left: 20px;
@@ -189,6 +182,7 @@ body {
   background-image: url(./Images/timeline.jpg);
   color: #8a11bf;
 }
+
 .dot1 {
   margin-left: 60px;
   margin-top: -35px;
@@ -203,7 +197,6 @@ body {
   position: absolute;
   margin-left: 160px;
   margin-top: 20px;
-
   background-image: url(./Images/timeline.jpg);
   color: #8a11bf;
 }
@@ -216,7 +209,6 @@ body {
   height: 60px;
   position: absolute;
   margin-left: 240px;
-
   margin-top: 20px;
   background-image: url(./Images/timeline.jpg);
 }
@@ -254,7 +246,6 @@ body {
   text-align: center;
 }
 
-/* div5 */
 .morning {
   width: 400px;
   height: 300px;
