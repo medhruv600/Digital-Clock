@@ -5,14 +5,13 @@ function time() {
   let hour = time.getHours();
   let min = time.getMinutes();
   let sec = time.getSeconds();
-  let ap = "AM";
+  let ap = time.getHours() >= 12 ? "PM" : "AM";
 
   if (hour === 0) {
     hour = 12;
   }
   if (hour > 12) {
     hour = hour - 12;
-    ap = "PM";
   }
   if (hour < 10) {
     hour = "0" + hour;
@@ -24,7 +23,7 @@ function time() {
     sec = "0" + sec;
   }
 
-  if (hour < 4 && ap === "PM") {
+  if (hour >= 1 && hour <= 4 && ap === "PM") {
     let a = document.getElementById("wakeup");
 
     a.innerText = "LET'S HAVE SOME LUNCH !!";
@@ -36,7 +35,7 @@ function time() {
     let c = document.getElementById("getup");
 
     c.innerText = "GOOD AFTERNOON !! TAKE SOME SLEEP";
-  } else if (hour < 8 && hour >= 4 && ap === "PM") {
+  } else if (hour > 4 && hour <= 8 && ap === "PM") {
     let a = document.getElementById("wakeup");
 
     a.innerText = "STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!";
@@ -48,7 +47,7 @@ function time() {
     let c = document.getElementById("getup");
 
     c.innerText = "GOOD Evening!!";
-  } else if (hour < 11 && hour >= 8 && ap === "PM") {
+  } else if (hour > 8 && hour <= 12 && ap === "PM") {
     let a = document.getElementById("wakeup");
 
     a.innerText = "CLOSE YOUR EYES AND GO TO SLEEP";
@@ -60,14 +59,14 @@ function time() {
     let c = document.getElementById("getup");
 
     c.innerText = "GOOD NIGHT!!";
-  } else if (hour > 1 && hour >= 7 && hour < 12 && ap === "AM") {
+  } else if (hour > 8 && hour <= 12 && ap === "AM") {
     let a = document.getElementById("wakeup");
 
     a.innerText = "GRAB SOME HEALTHY BREAKFAST!!!";
 
     let b = document.getElementById("image");
 
-    b.style.backgroundImage = "url('Images/morning.png')";
+    // b.style.backgroundImage = "url('Images/morning.png')";
 
     let c = document.getElementById("getup");
 
