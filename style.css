@@ -262,7 +262,7 @@ body {
   position: absolute;
   margin-left: 700px;
   margin-top: 30px;
-  background-image: url(./Images/morning.jpg);
+  background-image: url(./Images/default.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
